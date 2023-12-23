@@ -1,0 +1,28 @@
+<ns1:bibi 
+  xmlns:ns1="http://schemas.humanbrainproject.eu/SP10/2014/BIBI" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ns1:brainModel>
+    <ns1:file>idle_brain.py</ns1:file>
+    <ns1:populations population="neurons" from="0" step="1" to="39" xsi:type="ns1:Range" />
+    <ns1:populations population="record" from="0" step="1" to="39" xsi:type="ns1:Range" />
+  </ns1:brainModel>
+  <ns1:bodyModel robotId="husky">husky_model/model.sdf</ns1:bodyModel>
+  <ns1:transferFunction src="follow_place_cell_7.py" active="true" priority="0" xsi:type="ns1:PythonTransferFunction" />
+  <ns1:transferFunction src="follow_place_cell_2.py" active="true" priority="0" xsi:type="ns1:PythonTransferFunction" />
+  <ns1:transferFunction src="follow_place_cell_10.py" active="true" priority="0" xsi:type="ns1:PythonTransferFunction" />
+  <ns1:transferFunction src="Robot_Position.py" active="true" priority="0" xsi:type="ns1:PythonTransferFunction" />
+  <ns1:transferFunction src="eye_sensor_transmit.py" active="true" priority="0" xsi:type="ns1:PythonTransferFunction" />
+  <ns1:transferFunction src="all_neurons_spike_monitor.py" active="true" priority="0" xsi:type="ns1:PythonTransferFunction" />
+  <ns1:transferFunction src="starting_move.py" active="true" priority="0" xsi:type="ns1:PythonTransferFunction" />
+  <ns1:transferFunction src="follow_place_cell_3.py" active="true" priority="0" xsi:type="ns1:PythonTransferFunction" />
+  <ns1:transferFunction src="follow_place_cell_9.py" active="true" priority="0" xsi:type="ns1:PythonTransferFunction" />
+  <ns1:transferFunction src="follow_place_cell_11.py" active="true" priority="0" xsi:type="ns1:PythonTransferFunction" />
+  <ns1:transferFunction src="follow_place_cell_0.py" active="true" priority="0" xsi:type="ns1:PythonTransferFunction" />
+  <ns1:transferFunction src="follow_place_cell_1.py" active="true" priority="0" xsi:type="ns1:PythonTransferFunction" />
+  <ns1:transferFunction src="follow_place_cell_4.py" active="true" priority="0" xsi:type="ns1:PythonTransferFunction" />
+  <ns1:transferFunction src="follow_place_cell_8.py" active="true" priority="0" xsi:type="ns1:PythonTransferFunction" />
+  <ns1:transferFunction src="follow_place_cell_5.py" active="true" priority="0" xsi:type="ns1:PythonTransferFunction" />
+  <ns1:transferFunction src="detect_color.py" active="true" priority="0" xsi:type="ns1:PythonTransferFunction" />
+  <ns1:transferFunction src="follow_place_cell_6.py" active="true" priority="0" xsi:type="ns1:PythonTransferFunction" />
+  <ns1:transferFunction src="propagatepersistentfiring.py" active="true" priority="0" xsi:type="ns1:PythonTransferFunction" />
+</ns1:bibi>

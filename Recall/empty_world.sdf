@@ -1,0 +1,2932 @@
+<sdf version="1.6">
+  <world name="default">
+    <light name="sun" type="directional">
+      <cast_shadows>1</cast_shadows>
+      <pose frame="">-11.8208 -19.3843 17.2198 0 -0 0</pose>
+      <diffuse>0.7 0.7 0.7 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>0.3698 0.4 -0.5</direction>
+    </light>
+    <scene>
+      <ambient>0.4 0.4 0.4 1</ambient>
+      <background>0.7 0.7 0.7 1</background>
+      <shadows>1</shadows>
+    </scene>
+    <gravity>0 0 -9.8</gravity>
+    <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
+    <atmosphere type="adiabatic"/>
+    <physics name="default_physics" default="0" type="ode">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+    <spherical_coordinates>
+      <surface_model>EARTH_WGS84</surface_model>
+      <latitude_deg>0</latitude_deg>
+      <longitude_deg>0</longitude_deg>
+      <elevation>0</elevation>
+      <heading_deg>0</heading_deg>
+    </spherical_coordinates>
+    <state world_name="default">
+      <sim_time>3773 557060000</sim_time>
+      <real_time>0 0</real_time>
+      <wall_time>1608222202 935793163</wall_time>
+      <iterations>97641</iterations>
+      <model name="ground">
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name="link">
+          <pose frame="">0 0 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name="virtual_screen_0">
+        <pose frame="">10.6 0 0.5 0 0 -1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name="vr_screen::body">
+          <pose frame="">10.6 0 0.5 0 0 -1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name="virtual_screen_1">
+        <pose frame="">-9 -5 0.5 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name="vr_screen::body">
+          <pose frame="">-9 -5 0.5 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name="virtual_screen_2">
+        <pose frame="">7 -10 0.5 0 -0 3.14159</pose>
+        <scale>1 1 1</scale>
+        <link name="vr_screen::body">
+          <pose frame="">7 -10 0.5 0 -0 3.14159</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name="virtual_screen_3">
+        <pose frame="">-6 8.189 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name="vr_screen::body">
+          <pose frame="">-6 8.189 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name="wood_wall_0">
+        <pose frame="">-0.02055 3.16685 0.014666 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name="woodwall::body">
+          <pose frame="">-0.02055 3.16685 0.014666 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name="wood_wall_1">
+        <pose frame="">-2.02055 3.16685 0.014666 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name="woodwall::body">
+          <pose frame="">-2.02055 3.16685 0.014666 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name="wood_wall_10">
+        <pose frame="">10.827 0.022 -0.046 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name="woodwall::body">
+          <pose frame="">10.827 0.022 -0.046 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name="wood_wall_11">
+        <pose frame="">10.827 -3.89 -0.046 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name="woodwall::body">
+          <pose frame="">10.827 -3.89 -0.046 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name="wood_wall_12">
+        <pose frame="">10.827 -5.8 -0.046 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name="woodwall::body">
+          <pose frame="">10.827 -5.8 -0.046 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name="wood_wall_13">
+        <pose frame="">10.827 -7.7 -0.046 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name="woodwall::body">
+          <pose frame="">10.827 -7.7 -0.046 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name="wood_wall_14">
+        <pose frame="">9.828 -10.219 -0.046 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name="woodwall::body">
+          <pose frame="">9.828 -10.219 -0.046 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name="wood_wall_15">
+        <pose frame="">7.828 -10.219 -0.046 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name="woodwall::body">
+          <pose frame="">7.828 -10.219 -0.046 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name="wood_wall_16">
+        <pose frame="">5.828 -10.219 -0.046 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name="woodwall::body">
+          <pose frame="">5.828 -10.219 -0.046 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name="wood_wall_17">
+        <pose frame="">3.828 -10.219 -0.046 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name="woodwall::body">
+          <pose frame="">3.828 -10.219 -0.046 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name="wood_wall_18">
+        <pose frame="">1.828 -10.219 -0.046 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name="woodwall::body">
+          <pose frame="">1.828 -10.219 -0.046 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name="wood_wall_19">
+        <pose frame="">-0.172 -10.219 -0.046 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name="woodwall::body">
+          <pose frame="">-0.172 -10.219 -0.046 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name="wood_wall_2">
+        <pose frame="">1.97945 3.16685 0.014666 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name="woodwall::body">
+          <pose frame="">1.97945 3.16685 0.014666 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name="wood_wall_20">
+        <pose frame="">-2.172 -10.219 -0.046 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name="woodwall::body">
+          <pose frame="">-2.172 -10.219 -0.046 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name="wood_wall_21">
+        <pose frame="">-4.172 -10.219 -0.046 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name="woodwall::body">
+          <pose frame="">-4.172 -10.219 -0.046 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name="wood_wall_22">
+        <pose frame="">-3.2 0.4 0.015 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name="woodwall::body">
+          <pose frame="">-3.2 0.4 0.015 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name="wood_wall_23">
+        <pose frame="">-3.2 -1 0.015 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name="woodwall::body">
+          <pose frame="">-3.2 -1 0.015 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name="wood_wall_24">
+        <pose frame="">-2.4 -2.2 0.015 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name="woodwall::body">
+          <pose frame="">-2.4 -2.2 0.015 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name="wood_wall_25">
+        <pose frame="">-0.4 -2.2 0.015 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name="woodwall::body">
+          <pose frame="">-0.4 -2.2 0.015 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name="wood_wall_26">
+        <pose frame="">1.6 -2.2 0.015 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name="woodwall::body">
+          <pose frame="">1.6 -2.2 0.015 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name="wood_wall_27">
+        <pose frame="">3 -2.2 0.015 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name="woodwall::body">
+          <pose frame="">3 -2.2 0.015 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name="wood_wall_29">
+        <pose frame="">10.827 -9.336 -0.046 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name="woodwall::body">
+          <pose frame="">10.827 -9.336 -0.046 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name="wood_wall_3">
+        <pose frame="">3.97945 3.16685 0.014666 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name="woodwall::body">
+          <pose frame="">3.97945 3.16685 0.014666 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name="wood_wall_30">
+        <pose frame="">-6.172 -10.219 -0.046 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name="woodwall::body">
+          <pose frame="">-6.172 -10.219 -0.046 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name="wood_wall_30_0">
+        <pose frame="">-8.172 -10.219 -0.046 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name="woodwall::body">
+          <pose frame="">-8.172 -10.219 -0.046 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name="wood_wall_31">
+        <pose frame="">-9.3 -9.4 0.015 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name="woodwall::body">
+          <pose frame="">-9.3 -9.4 0.015 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name="wood_wall_32">
+        <pose frame="">-9.3 -7.5 0.013 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name="woodwall::body">
+          <pose frame="">-9.3 -7.5 0.013 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name="wood_wall_33">
+        <pose frame="">-9.3 -5.6 0.015 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name="woodwall::body">
+          <pose frame="">-9.3 -5.6 0.015 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name="wood_wall_34">
+        <pose frame="">-9.3 -3.7 0.015 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name="woodwall::body">
+          <pose frame="">-9.3 -3.7 0.015 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name="wood_wall_35">
+        <pose frame="">-9.3 -1.8 0.015 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name="woodwall::body">
+          <pose frame="">-9.3 -1.8 0.015 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name="wood_wall_36">
+        <pose frame="">-9.3 0.04 0.015 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name="woodwall::body">
+          <pose frame="">-9.3 0.04 0.015 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name="wood_wall_37">
+        <pose frame="">-9.3 1.91 0.015 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name="woodwall::body">
+          <pose frame="">-9.3 1.91 0.015 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name="wood_wall_38">
+        <pose frame="">-9.3 3.797 0.006 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name="woodwall::body">
+          <pose frame="">-9.3 3.797 0.006 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name="wood_wall_39">
+        <pose frame="">-9.3 5.589 0.015 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name="woodwall::body">
+          <pose frame="">-9.3 5.589 0.015 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name="wood_wall_4">
+        <pose frame="">5.97945 3.16685 0.014666 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name="woodwall::body">
+          <pose frame="">5.97945 3.16685 0.014666 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name="wood_wall_40">
+        <pose frame="">-9.3 7.458 0.015 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name="woodwall::body">
+          <pose frame="">-9.3 7.458 0.015 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name="wood_wall_41">
+        <pose frame="">-9.3 9 0.015 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name="woodwall::body">
+          <pose frame="">-9.3 9 0.015 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name="wood_wall_42">
+        <pose frame="">-3.2 4.3 0.015 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name="woodwall::body">
+          <pose frame="">-3.2 4.3 0.015 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name="wood_wall_43">
+        <pose frame="">-3.2 6.088 0.015 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name="woodwall::body">
+          <pose frame="">-3.2 6.088 0.015 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name="wood_wall_44">
+        <pose frame="">-3.2 7.814 0.015 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name="woodwall::body">
+          <pose frame="">-3.2 7.814 0.015 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name="wood_wall_45">
+        <pose frame="">-3.2 9.615 0.015 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name="woodwall::body">
+          <pose frame="">-3.2 9.615 0.015 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name="wood_wall_5">
+        <pose frame="">7.97945 3.16685 0.014666 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name="woodwall::body">
+          <pose frame="">7.97945 3.16685 0.014666 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name="wood_wall_6">
+        <pose frame="">-3.2 2.35 0.015 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name="woodwall::body">
+          <pose frame="">-3.2 2.35 0.015 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name="wood_wall_7">
+        <pose frame="">9.97945 3.16685 0.014666 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name="woodwall::body">
+          <pose frame="">9.97945 3.16685 0.014666 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name="wood_wall_8">
+        <pose frame="">10.827 1.782 -0.046 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name="woodwall::body">
+          <pose frame="">10.827 1.782 -0.046 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name="wood_wall_9">
+        <pose frame="">10.827 -1.927 -0.046 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name="woodwall::body">
+          <pose frame="">10.827 -1.927 -0.046 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <light name="sun">
+        <pose frame="">-11.8208 -19.3843 17.2198 0 -0 0</pose>
+      </light>
+    </state>
+    <model name="ground">
+      <static>1</static>
+      <link name="link">
+        <visual name="visual">
+          <cast_shadows>0</cast_shadows>
+          <pose frame="">0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://empty_world/meshes/emptyworldground.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name="collision">
+          <pose frame="">0 0 0.016 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>22.938 22.954 0.016</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+        <enable_wind>0</enable_wind>
+      </link>
+      <pose frame="">0 0 0 0 -0 0</pose>
+      <pose frame="">0 0 0 0 -0 0</pose>
+      <pose frame="">0 0 0 0 -0 0</pose>
+    </model>
+    <model name="virtual_screen_2">
+      <static>1</static>
+      <link name="vr_screen::body">
+        <collision name="frame">
+          <pose frame="">0 0.13 0.7 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>2 0.18 1.4</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+          <laser_retro>1.02238e-37</laser_retro>
+        </collision>
+        <visual name="screen">
+          <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://vr_screen/meshes/screen.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>__default__</name>
+              <uri>__default__</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name="screen_glass">
+          <cast_shadows>0</cast_shadows>
+          <pose frame="">0 0.02 0.75 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>1.96 0.015 1.1</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/BlueGlow</name>
+            </script>
+          </material>
+        </visual>
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>0</gravity>
+        <enable_wind>0</enable_wind>
+      </link>
+      <pose frame="">7.97945 -9.64798 1.01922 0 -0 0</pose>
+      <pose frame="">8 -9 3 0 -0 3.14159</pose>
+      <pose frame="">9.979 -9.648 1.019 0 -0 3.14159</pose>
+      <enable_wind>0</enable_wind>
+    </model>
+    <model name="virtual_screen_0">
+      <static>1</static>
+      <link name="vr_screen::body">
+        <collision name="frame">
+          <pose frame="">0 0.13 0.7 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>2 0.18 1.4</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+          <laser_retro>0</laser_retro>
+        </collision>
+        <visual name="screen">
+          <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://vr_screen/meshes/screen.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>__default__</name>
+              <uri>__default__</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name="screen_glass">
+          <cast_shadows>0</cast_shadows>
+          <pose frame="">0 0.02 0.75 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>1.96 0.015 1.1</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/RedGlow</name>
+            </script>
+          </material>
+        </visual>
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>0</gravity>
+        <enable_wind>0</enable_wind>
+      </link>
+      <pose frame="">10 0 1 0 0 -1.5708</pose>
+      <pose frame="">4.573 3.5 1 0 0 -1.5708</pose>
+      <pose frame="">10 1 3 0 0 -1.5708</pose>
+      <pose frame="">4.57259 -0.005999 0.019561 0 -0 0</pose>
+      <enable_wind>0</enable_wind>
+    </model>
+    <model name="wood_wall_0">
+      <pose frame="">-0.02055 3.16685 0.014666 0 -0 0</pose>
+      <static>1</static>
+      <link name="woodwall::body">
+        <collision name="woodwall-coll">
+          <pose frame="">0 0 1 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>2 0.4 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="woodwall">
+          <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://woodwall/meshes/woodwall.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name="wood_wall_1">
+      <pose frame="">-2.02055 3.16685 0.014666 0 -0 0</pose>
+      <static>1</static>
+      <link name="woodwall::body">
+        <collision name="woodwall-coll">
+          <pose frame="">0 0 1 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>2 0.4 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="woodwall">
+          <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://woodwall/meshes/woodwall.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name="wood_wall_2">
+      <pose frame="">1.97945 3.16685 0.014666 0 -0 0</pose>
+      <static>1</static>
+      <link name="woodwall::body">
+        <collision name="woodwall-coll">
+          <pose frame="">0 0 1 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>2 0.4 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="woodwall">
+          <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://woodwall/meshes/woodwall.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name="wood_wall_3">
+      <pose frame="">3.97945 3.16685 0.014666 0 -0 0</pose>
+      <static>1</static>
+      <link name="woodwall::body">
+        <collision name="woodwall-coll">
+          <pose frame="">0 0 1 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>2 0.4 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="woodwall">
+          <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://woodwall/meshes/woodwall.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name="wood_wall_4">
+      <pose frame="">5.97945 3.16685 0.014666 0 -0 0</pose>
+      <static>1</static>
+      <link name="woodwall::body">
+        <collision name="woodwall-coll">
+          <pose frame="">0 0 1 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>2 0.4 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="woodwall">
+          <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://woodwall/meshes/woodwall.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name="wood_wall_5">
+      <pose frame="">7.97945 3.16685 0.014666 0 -0 0</pose>
+      <static>1</static>
+      <link name="woodwall::body">
+        <collision name="woodwall-coll">
+          <pose frame="">0 0 1 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>2 0.4 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="woodwall">
+          <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://woodwall/meshes/woodwall.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name="wood_wall_6">
+      <pose frame="">-4.37069 1.49125 0.014665 0 -0 0</pose>
+      <static>1</static>
+      <link name="woodwall::body">
+        <collision name="woodwall-coll">
+          <pose frame="">0 0 1 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>2 0.4 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="woodwall">
+          <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://woodwall/meshes/woodwall.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name="wood_wall_7">
+      <pose frame="">9.97945 3.16685 0.014666 0 -0 0</pose>
+      <static>1</static>
+      <link name="woodwall::body">
+        <collision name="woodwall-coll">
+          <pose frame="">0 0 1 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>2 0.4 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="woodwall">
+          <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://woodwall/meshes/woodwall.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name="wood_wall_8">
+      <pose frame="">10.1272 1.78224 0.014665 0 -0 0</pose>
+      <static>1</static>
+      <link name="woodwall::body">
+        <collision name="woodwall-coll">
+          <pose frame="">0 0 1 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>2 0.4 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="woodwall">
+          <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://woodwall/meshes/woodwall.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name="wood_wall_9">
+      <pose frame="">10.4515 -1.92733 -0.045882 0 -0 0</pose>
+      <static>1</static>
+      <link name="woodwall::body">
+        <collision name="woodwall-coll">
+          <pose frame="">0 0 1 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>2 0.4 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="woodwall">
+          <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://woodwall/meshes/woodwall.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name="wood_wall_10">
+      <pose frame="">10.4515 0.022079 -0.045882 0 -0 0</pose>
+      <static>1</static>
+      <link name="woodwall::body">
+        <collision name="woodwall-coll">
+          <pose frame="">0 0 1 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>2 0.4 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="woodwall">
+          <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://woodwall/meshes/woodwall.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name="wood_wall_11">
+      <pose frame="">9.74012 -5.05993 0.014665 0 -0 0</pose>
+      <static>1</static>
+      <link name="woodwall::body">
+        <collision name="woodwall-coll">
+          <pose frame="">0 0 1 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>2 0.4 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="woodwall">
+          <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://woodwall/meshes/woodwall.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name="wood_wall_12">
+      <pose frame="">10.4515 -6.65523 -0.045882 0 -0 0</pose>
+      <static>1</static>
+      <link name="woodwall::body">
+        <collision name="woodwall-coll">
+          <pose frame="">0 0 1 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>2 0.4 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="woodwall">
+          <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://woodwall/meshes/woodwall.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name="wood_wall_13">
+      <pose frame="">10.0395 -8.08244 0.014666 0 -0 0</pose>
+      <static>1</static>
+      <link name="woodwall::body">
+        <collision name="woodwall-coll">
+          <pose frame="">0 0 1 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>2 0.4 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="woodwall">
+          <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://woodwall/meshes/woodwall.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name="wood_wall_14">
+      <pose frame="">9.82784 -10.2187 0.014666 0 -0 0</pose>
+      <static>1</static>
+      <link name="woodwall::body">
+        <collision name="woodwall-coll">
+          <pose frame="">0 0 1 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>2 0.4 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="woodwall">
+          <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://woodwall/meshes/woodwall.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name="wood_wall_15">
+      <pose frame="">7.82784 -10.2187 0.014666 0 -0 0</pose>
+      <static>1</static>
+      <link name="woodwall::body">
+        <collision name="woodwall-coll">
+          <pose frame="">0 0 1 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>2 0.4 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="woodwall">
+          <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://woodwall/meshes/woodwall.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name="wood_wall_16">
+      <pose frame="">5.828 -10.219 -0.046 0 -0 0</pose>
+      <static>1</static>
+      <link name="woodwall::body">
+        <collision name="woodwall-coll">
+          <pose frame="">0 0 1 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>2 0.4 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="woodwall">
+          <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://woodwall/meshes/woodwall.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name="wood_wall_17">
+      <pose frame="">3.828 -10.219 -0.046 0 -0 0</pose>
+      <static>1</static>
+      <link name="woodwall::body">
+        <collision name="woodwall-coll">
+          <pose frame="">0 0 1 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>2 0.4 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="woodwall">
+          <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://woodwall/meshes/woodwall.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name="wood_wall_18">
+      <pose frame="">1.828 -10.219 -0.046 0 -0 0</pose>
+      <static>1</static>
+      <link name="woodwall::body">
+        <collision name="woodwall-coll">
+          <pose frame="">0 0 1 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>2 0.4 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="woodwall">
+          <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://woodwall/meshes/woodwall.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name="wood_wall_19">
+      <pose frame="">-0.172 -10.219 -0.046 0 -0 0</pose>
+      <static>1</static>
+      <link name="woodwall::body">
+        <collision name="woodwall-coll">
+          <pose frame="">0 0 1 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>2 0.4 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="woodwall">
+          <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://woodwall/meshes/woodwall.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name="wood_wall_20">
+      <pose frame="">-2.172 -10.219 -0.046 0 -0 0</pose>
+      <static>1</static>
+      <link name="woodwall::body">
+        <collision name="woodwall-coll">
+          <pose frame="">0 0 1 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>2 0.4 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="woodwall">
+          <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://woodwall/meshes/woodwall.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name="wood_wall_21">
+      <pose frame="">-4.172 -10.219 -0.046 0 -0 0</pose>
+      <static>1</static>
+      <link name="woodwall::body">
+        <collision name="woodwall-coll">
+          <pose frame="">0 0 1 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>2 0.4 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="woodwall">
+          <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://woodwall/meshes/woodwall.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name="wood_wall_22">
+      <pose frame="">-2.97023 -0.221794 0.014665 0 -0 0</pose>
+      <static>1</static>
+      <link name="woodwall::body">
+        <collision name="woodwall-coll">
+          <pose frame="">0 0 1 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>2 0.4 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="woodwall">
+          <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://woodwall/meshes/woodwall.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name="wood_wall_23">
+      <pose frame="">-2.86966 -1.91555 0.014665 0 -0 0</pose>
+      <static>1</static>
+      <link name="woodwall::body">
+        <collision name="woodwall-coll">
+          <pose frame="">0 0 1 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>2 0.4 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="woodwall">
+          <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://woodwall/meshes/woodwall.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name="wood_wall_24">
+      <pose frame="">-2.4 -2.2 0.015 0 -0 0</pose>
+      <static>1</static>
+      <link name="woodwall::body">
+        <collision name="woodwall-coll">
+          <pose frame="">0 0 1 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>2 0.4 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="woodwall">
+          <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://woodwall/meshes/woodwall.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name="wood_wall_25">
+      <pose frame="">-0.4 -2.2 0.015 0 -0 0</pose>
+      <static>1</static>
+      <link name="woodwall::body">
+        <collision name="woodwall-coll">
+          <pose frame="">0 0 1 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>2 0.4 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="woodwall">
+          <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://woodwall/meshes/woodwall.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name="wood_wall_26">
+      <pose frame="">1.6 -2.2 0.015 0 -0 0</pose>
+      <static>1</static>
+      <link name="woodwall::body">
+        <collision name="woodwall-coll">
+          <pose frame="">0 0 1 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>2 0.4 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="woodwall">
+          <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://woodwall/meshes/woodwall.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name="wood_wall_27">
+      <pose frame="">3.6 -2.2 0.015 0 -0 0</pose>
+      <static>1</static>
+      <link name="woodwall::body">
+        <collision name="woodwall-coll">
+          <pose frame="">0 0 1 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>2 0.4 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="woodwall">
+          <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://woodwall/meshes/woodwall.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name="wood_wall_29">
+      <pose frame="">10.7433 -9.33636 0.014665 0 -0 0</pose>
+      <static>1</static>
+      <link name="woodwall::body">
+        <collision name="woodwall-coll">
+          <pose frame="">0 0 1 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>2 0.4 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="woodwall">
+          <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://woodwall/meshes/woodwall.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name="wood_wall_30">
+      <pose frame="">-6.172 -10.219 -0.046 0 -0 0</pose>
+      <static>1</static>
+      <link name="woodwall::body">
+        <collision name="woodwall-coll">
+          <pose frame="">0 0 1 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>2 0.4 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="woodwall">
+          <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://woodwall/meshes/woodwall.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name="wood_wall_31">
+      <pose frame="">-7.77748 -9.18345 0.014665 0 -0 0</pose>
+      <static>1</static>
+      <link name="woodwall::body">
+        <collision name="woodwall-coll">
+          <pose frame="">0 0 1 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>2 0.4 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="woodwall">
+          <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://woodwall/meshes/woodwall.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name="wood_wall_32">
+      <pose frame="">-7.3074 -7.18633 0.012986 0 -0 0</pose>
+      <static>1</static>
+      <link name="woodwall::body">
+        <collision name="woodwall-coll">
+          <pose frame="">0 0 1 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>2 0.4 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="woodwall">
+          <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://woodwall/meshes/woodwall.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name="wood_wall_33">
+      <pose frame="">-7.32741 -5.48587 0.014665 0 -0 0</pose>
+      <static>1</static>
+      <link name="woodwall::body">
+        <collision name="woodwall-coll">
+          <pose frame="">0 0 1 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>2 0.4 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="woodwall">
+          <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://woodwall/meshes/woodwall.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name="wood_wall_34">
+      <pose frame="">-7.34767 -3.60666 0.014665 0 -0 0</pose>
+      <static>1</static>
+      <link name="woodwall::body">
+        <collision name="woodwall-coll">
+          <pose frame="">0 0 1 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>2 0.4 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="woodwall">
+          <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://woodwall/meshes/woodwall.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name="wood_wall_35">
+      <pose frame="">-7.44176 -1.5818 0.014665 0 -0 0</pose>
+      <static>1</static>
+      <link name="woodwall::body">
+        <collision name="woodwall-coll">
+          <pose frame="">0 0 1 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>2 0.4 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="woodwall">
+          <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://woodwall/meshes/woodwall.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name="wood_wall_36">
+      <pose frame="">-7.16352 0.039685 0.014665 0 -0 0</pose>
+      <static>1</static>
+      <link name="woodwall::body">
+        <collision name="woodwall-coll">
+          <pose frame="">0 0 1 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>2 0.4 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="woodwall">
+          <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://woodwall/meshes/woodwall.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name="wood_wall_37">
+      <pose frame="">-7.26723 1.9096 0.014665 0 -0 0</pose>
+      <static>1</static>
+      <link name="woodwall::body">
+        <collision name="woodwall-coll">
+          <pose frame="">0 0 1 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>2 0.4 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="woodwall">
+          <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://woodwall/meshes/woodwall.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name="wood_wall_38">
+      <pose frame="">-7.39858 3.79678 0.005963 0 -0 0</pose>
+      <static>1</static>
+      <link name="woodwall::body">
+        <collision name="woodwall-coll">
+          <pose frame="">0 0 1 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>2 0.4 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="woodwall">
+          <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://woodwall/meshes/woodwall.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name="wood_wall_39">
+      <pose frame="">-7.10967 5.58912 0.014665 0 -0 0</pose>
+      <static>1</static>
+      <link name="woodwall::body">
+        <collision name="woodwall-coll">
+          <pose frame="">0 0 1 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>2 0.4 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="woodwall">
+          <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://woodwall/meshes/woodwall.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name="wood_wall_40">
+      <pose frame="">-7.09478 7.45758 0.014665 0 -0 0</pose>
+      <static>1</static>
+      <link name="woodwall::body">
+        <collision name="woodwall-coll">
+          <pose frame="">0 0 1 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>2 0.4 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="woodwall">
+          <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://woodwall/meshes/woodwall.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name="wood_wall_41">
+      <pose frame="">-7.00136 9.63401 0.014665 0 -0 0</pose>
+      <static>1</static>
+      <link name="woodwall::body">
+        <collision name="woodwall-coll">
+          <pose frame="">0 0 1 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>2 0.4 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="woodwall">
+          <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://woodwall/meshes/woodwall.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name="virtual_screen_1">
+      <pose frame="">-6.9599 -6.17354 0.019561 0 -0 0</pose>
+      <static>1</static>
+      <link name="vr_screen::body">
+        <collision name="frame">
+          <pose frame="">0 0.13 0.7 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>2 0.18 1.4</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+          <laser_retro>7.14293e+31</laser_retro>
+        </collision>
+        <visual name="screen">
+          <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://vr_screen/meshes/screen.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>__default__</name>
+              <uri>__default__</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name="screen_glass">
+          <cast_shadows>0</cast_shadows>
+          <pose frame="">0 0.02 0.75 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>1.96 0.015 1.1</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/BlackGlow</name>
+            </script>
+          </material>
+        </visual>
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>0</gravity>
+        <enable_wind>0</enable_wind>
+      </link>
+      <enable_wind>0</enable_wind>
+    </model>
+    <model name="wood_wall_42">
+      <pose frame="">-2.75293 4.73116 0.015 0 -0 0</pose>
+      <static>1</static>
+      <link name="woodwall::body">
+        <collision name="woodwall-coll">
+          <pose frame="">0 0 1 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>2 0.4 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="woodwall">
+          <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://woodwall/meshes/woodwall.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name="wood_wall_43">
+      <pose frame="">-3.35564 6.08806 0.014665 0 -0 0</pose>
+      <static>1</static>
+      <link name="woodwall::body">
+        <collision name="woodwall-coll">
+          <pose frame="">0 0 1 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>2 0.4 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="woodwall">
+          <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://woodwall/meshes/woodwall.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name="wood_wall_44">
+      <pose frame="">-3.12411 7.81366 0.015 0 -0 0</pose>
+      <static>1</static>
+      <link name="woodwall::body">
+        <collision name="woodwall-coll">
+          <pose frame="">0 0 1 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>2 0.4 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="woodwall">
+          <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://woodwall/meshes/woodwall.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name="wood_wall_45">
+      <pose frame="">-2.95475 9.61516 0.012986 0 -0 0</pose>
+      <static>1</static>
+      <link name="woodwall::body">
+        <collision name="woodwall-coll">
+          <pose frame="">0 0 1 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>2 0.4 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="woodwall">
+          <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://woodwall/meshes/woodwall.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <model name="virtual_screen_3">
+      <pose frame="">-5.02821 10.1886 0.019561 0 -0 0</pose>
+      <static>1</static>
+      <link name="vr_screen::body">
+        <collision name="frame">
+          <pose frame="">0 0.13 0.7 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>2 0.18 1.4</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+          <laser_retro>0</laser_retro>
+        </collision>
+        <visual name="screen">
+          <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://vr_screen/meshes/screen.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>__default__</name>
+              <uri>__default__</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name="screen_glass">
+          <cast_shadows>0</cast_shadows>
+          <pose frame="">0 0.02 0.75 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>1.96 0.015 1.1</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/GreenGlow</name>
+            </script>
+          </material>
+        </visual>
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>0</gravity>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <wind/>
+    <model name="wood_wall_30_0">
+      <pose frame="">-8.172 -10.219 -0.046 0 -0 0</pose>
+      <static>1</static>
+      <link name="woodwall::body">
+        <collision name="woodwall-coll">
+          <pose frame="">0 0 1 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>2 0.4 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="woodwall">
+          <cast_shadows>1</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://woodwall/meshes/woodwall.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <enable_wind>0</enable_wind>
+      </link>
+    </model>
+    <audio>
+      <device>default</device>
+    </audio>
+    </world>
+</sdf>
